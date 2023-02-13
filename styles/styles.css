@@ -8,7 +8,7 @@ body {
 .order-card {
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 60px;
 }
 
 .card-name {
@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 450px;
+    
     
 }
 
@@ -42,6 +43,7 @@ body {
 
 .quantity {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -63,6 +65,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.remover:hover {
+    cursor: pointer;
 }
 
 .color-selection {
@@ -92,3 +98,117 @@ body {
 .size-selection {
     display: flex;
 }
+
+.total {
+    display: flex;
+    padding-top: 20px;
+    width: 305px;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.red-price,
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+.red-price {
+    color: #DA1F39;
+}
+.get-order {
+    width: 252px;
+    height: 50px;
+    color: #ffffff;
+    background: #DA1F39;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 17px 33px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.get-order:hover {
+    background: #ffffff;
+    color: #DA1F39;
+   
+}
+
+.continue {
+    width: 252px;
+    height: 50px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 17px 33px;
+    border: none;
+    cursor: pointer;
+    background: #ffffff;
+}
+
+.continue:hover {
+    text-decoration: underline;
+}
+
+.purchase-buttons {
+    justify-content: center;
+    align-items: center;
+}
+
+.purchase {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 58px;
+}
+
+.return-choice {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.choice-par {
+    width: 625px;
+    padding-bottom: 174px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1065px) {
+.order-card {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.priority {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 52px;
+}
+.remover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.purchase {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.purchase-buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-par {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.container {
+    padding: 30px 20px;
+  }
+}
+    
